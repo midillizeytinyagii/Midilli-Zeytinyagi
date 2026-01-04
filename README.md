@@ -1,22 +1,27 @@
+# 🫒 Midilli Zeytinyağı Galeri Sayfası
 
-# Midilli Zeytinyağı Galeri Sayfası
+Bu proje, **Midilli Zeytinyağı ürünlerini** sergilemek için hazırlanmış **modern ve mobil uyumlu bir galeri sayfasıdır**.  
+Her ürünün altında **WhatsApp ile sipariş** butonu bulunur.
 
-Bu proje, **Midilli Zeytinyağı ürünlerini sergilemek için** hazırlanmış basit ve mobil uyumlu bir galeri sayfasıdır.  
-Sayfa tamamen **responsive** (mobil, tablet ve desktop uyumlu) ve ürünlerin altına **WhatsApp üzerinden sipariş** verme imkanı sağlar.
+---
 
-## Özellikler
+## 🌐 Canlı Galeri
 
-- Mobil uyumlu, alt alta veya grid şeklinde ürün gösterimi
-- Her ürün için başlık, fiyat ve WhatsApp sipariş butonu
-- Taşmayı önleyen responsive resimler
-- Kolay ürün ekleme: sadece HTML içine `<div class="gallery-item">...</div>` eklemek yeterli
-- Eski CSS veya slider ile çakışmaz
+[Galeri Sayfası](https://midillizeytinyagii.github.io/Midilli-Zeytinyagi/galeri.html)
 
-## Kullanım
+---
 
-1. Bu projeyi GitHub Pages üzerinde çalıştırabilirsiniz.
-2. `galeri.html` dosyasını tarayıcıda açarak galeriyi görüntüleyebilirsiniz.
-3. Ürün eklemek için `<section class="gallery">` içine yeni ürün kartları ekleyin:
+## ✨ Özellikler
+
+- 🎨 Renkli ve modern tasarım  
+- 📱 Mobil uyumlu, alt alta veya grid şeklinde ürün gösterimi  
+- 💬 WhatsApp ile hızlı sipariş  
+- 🖼 Responsive resimler (taşma veya kırpılma yok)  
+- 🛠 Kolay ürün ekleme: `<div class="gallery-item">...</div>` kullanabilirsiniz  
+
+---
+
+## 🛠 Ürün Eklemek
 
 ```html
 <div class="gallery-item">
