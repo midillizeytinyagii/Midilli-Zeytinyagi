@@ -3,59 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Midilli Zeytinyağı</title>
+<title>Midilli Zeytinyağı Ürünler</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Arial, sans-serif; background: #fafafa; padding: 20px; }
+/* ---------------------- Genel ---------------------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #fafafa; padding: 20px; }
 
-  .gallery { display: grid; grid-template-columns: 1fr; gap: 20px; }
+/* ---------------------- Gallery Container ---------------------- */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobilde tek kolon */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .gallery-item {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
+/* ---------------------- Her Ürün Kartı ---------------------- */
+.gallery-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+/* ---------------------- Fotoğraf ---------------------- */
+.gallery-item img {
+  width: 100% !important;      /* Taşmayı engelle */
+  height: auto !important;     /* Oran bozulmasın */
+  display: block;
+  object-fit: cover !important; /* Büyük resim kırpılır ama taşmaz */
+}
+
+/* ---------------------- Ürün Başlığı ---------------------- */
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 12px 0 8px 0;
+}
+
+/* ---------------------- Fiyat ---------------------- */
+.product-price {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* ---------------------- WhatsApp Butonu ---------------------- */
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe57;
+}
+
+/* ---------------------- Desktop Grid ---------------------- */
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* Masaüstü 2 kolon */
   }
-
   .gallery-item img {
-    width: 100%;        /* Ekrana sığacak */
-    height: auto;       /* Oran bozulmasın */
-    display: block;
-    object-fit: cover;  /* Büyük resimler taşmaz */
+    max-height: 400px; /* İsteğe bağlı maksimum yükseklik */
   }
-
-  .product-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin: 12px 0;
-  }
-
-  .product-price {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 8px;
-  }
-
-  .whatsapp-btn {
-    display: inline-block;
-    background-color: #25D366;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    margin: 8px 0 16px;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-
-  .whatsapp-btn:hover {
-    background-color: #1ebe57;
-  }
-
-  @media (min-width: 768px) {
-    .gallery { grid-template-columns: repeat(2, 1fr); }
-  }
+}
 </style>
 </head>
 <body>
@@ -75,19 +95,19 @@
     <img src="https://midillizeytinyagii.github.io/Midilli-Zeytinyagi/1%20LT%20Teneke%20Nat%C3%BCrel%20S%C4%B1zma.jpg" alt="1 LT Teneke Natürel Sızma">
     <div class="product-title">1 LT Teneke Natürel Sızma</div>
     <div class="product-price">₺400</div>
-    <a href="https://wa.me/905XXXXXXXXX?text=Merhaba,%201%20LT%20Teneke%20Nat%C3%BCrel%20S%C4%B1zma%20istiyorum" class="whatsapp-btn" target="_blank">WhatsApp’tan Sipariş</a>
+    <a href="https://wa.me/905XXXXXXXXX?text=Merhaba,%201%20LT%20Teneke%20Natürel%20Sızma%20istiyorum" class="whatsapp-btn" target="_blank">WhatsApp’tan Sipariş</a>
   </div>
 
   <div class="gallery-item">
     <img src="https://midillizeytinyagii.github.io/Midilli-Zeytinyagi/1%20LT%20Şişe%20Nat%C3%BCrel%20S%C4%B1zma.jpg" alt="1 LT Şişe Natürel Sızma">
     <div class="product-title">1 LT Şişe Natürel Sızma</div>
     <div class="product-price">₺350</div>
-    <a href="https://wa.me/905XXXXXXXXX?text=Merhaba,%201%20LT%20Şişe%20Nat%C3%BCrel%20S%C4%B1zma%20istiyorum" class="whatsapp-btn" target="_blank">WhatsApp’tan Sipariş</a>
+    <a href="https://wa.me/905XXXXXXXXX?text=Merhaba,%201%20LT%20Şişe%20Natürel%20Sızma%20istiyorum" class="whatsapp-btn" target="_blank">WhatsApp’tan Sipariş</a>
   </div>
 
   <div class="gallery-item">
     <img src="https://midillizeytinyagii.github.io/Midilli-Zeytinyagi/5%20LT%20İlk%20Hasat.jpg" alt="5 LT İlk Hasat">
-    <div class="product-title">5 LT Teneke – Yeni Sezon İlk Hasat</div>
+    <div class="product-title">5 LT Teneke – İlk Hasat</div>
     <div class="product-price">₺1750</div>
     <a href="https://wa.me/905XXXXXXXXX?text=Merhaba,%205%20LT%20İlk%20Hasat%20istiyorum" class="whatsapp-btn" target="_blank">WhatsApp’tan Sipariş</a>
   </div>
@@ -96,10 +116,10 @@
     <img src="https://midillizeytinyagii.github.io/Midilli-Zeytinyagi/5%20LT%20Nat%C3%BCrel%20S%C4%B1zma.jpg" alt="5 LT Natürel Sızma">
     <div class="product-title">5 LT Teneke Natürel Sızma</div>
     <div class="product-price">₺1450</div>
-    <a href="https://wa.me/905XXXXXXXXX?text=Merhaba,%205%20LT%20Nat%C3%BCrel%20S%C4%B1zma%20istiyorum" class="whatsapp-btn" target="_blank">WhatsApp’tan Sipariş</a>
+    <a href="https://wa.me/905XXXXXXXXX?text=Merhaba,%205%20LT%20Natürel%20Sızma%20istiyorum" class="whatsapp-btn" target="_blank">WhatsApp’tan Sipariş</a>
   </div>
 
 </section>
 
 </body>
-   </html>
+     </html>
