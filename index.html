@@ -1,222 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Midilli Zeytinyağı</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #6b8e23, #556b2f);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.6rem;
-    }
-
-    header p {
-      margin-top: 12px;
-      font-size: 1.15rem;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      margin-bottom: 20px;
-    }
-
-    .card h3 {
-      color: #556b2f;
-      margin-top: 0;
-    }
-
-    .cta {
-      background: #6b8e23;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .cta a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 30px;
-      background: white;
-      color: #6b8e23;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 30px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      background: #eee;
-    }
-
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 14px 20px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 999;
-    }
-  </style>
+  <title>Midilli Zeytinyağı Slider</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <h1>Midilli Zeytinyağı</h1>
-  <p><strong>İzmir’in Tire İlçesinin Dağlarından Gelen Lezzet</strong></p>
-  <p>Doğadan sofranıza, saf ve doğal zeytinyağı</p>
-</header>
+  <section class="slider-container">
+    <button class="slider-btn prev">&#10094;</button>
 
-<section>
-  <h2>Hakkımızda</h2>
-  <p>
-    Midilli Zeytinyağı, İzmir’in Tire ilçesinin dağlık bölgelerinde yetişen
-    zeytinlerden elde edilen, katkısız ve doğal ürünler sunar.
-    Geleneksel üretim anlayışıyla kalite ve lezzeti bir araya getirir.
-  </p>
-</section>
-
-<section>
-  <h2>Ürünlerimiz</h2>
-
-  <div class="card" style="text-align:center;">
-    <img src="IMG-20260104-WA0006.jpg" alt="Midilli Zeytinyağı"
-         style="max-width:100%; border-radius:12px; margin-bottom:20px;">
-
-    <h3>Natürel Sızma Zeytinyağı</h3>
-
-    <p>
-      Tire’nin bereketli dağlarında yetişen zeytinlerden elde edilen
-      natürel sızma zeytinyağımız,
-      <strong>erken hasat</strong> ve
-      <strong>olgun hasat</strong> seçenekleriyle sunulmaktadır.
-      Kendine özgü aroması, dengeli tadı ve doğal yapısıyla
-      sofralarınıza sağlık ve lezzet katar.
-    </p>
-  </div>
-</section>
-
-<div class="cta">
-  <h2>Bizimle İletişime Geçin</h2>
-  <p>Detaylı bilgi ve sipariş için WhatsApp’tan ulaşabilirsiniz.</p>
-  <a href="https://wa.me/905074398097" target="_blank">
-    WhatsApp’tan Yaz
-  </a>
-</div>
-
-<footer>
-  © 2026 Midilli Zeytinyağı • Tüm hakları saklıdır
-</footer>
-
-<a href="https://wa.me/905074398097" target="_blank" class="whatsapp-btn">
-  💬 WhatsApp
-</a>
-
-  <section>
-  <h2>Ürünlerimiz</h2>
-
-  <div class="features">
-
-    <div class="card">
-      <img src="IMG-20260105-WA0016.jpg" alt="1 LT Cam Natürel Sızma">
-      <h3>1 LT Cam Natürel Sızma Zeytinyağı</h3>
-      <p>Erken hasat & olgun hasat</p>
-      <strong>₺400</strong><br><br>
-      <a href="https://wa.me/905074398097" target="_blank">WhatsApp’tan Sipariş</a>
+    <div class="slider-track">
+      <div class="slide"><img src="img/zeytinyagi1.jpg" alt="Midilli Zeytinyağı"></div>
+      <div class="slide"><img src="img/zeytinyagi2.jpg" alt="Soğuk Sıkım"></div>
+      <div class="slide"><img src="img/zeytinyagi3.jpg" alt="Naturel Sızma"></div>
+      <div class="slide"><img src="img/zeytinyagi4.jpg" alt="Organik"></div>
     </div>
 
-    <div class="card">
-      <img src="IMG-20260105-WA0005.jpg" alt="1 LT Teneke Natürel Sızma">
-      <h3>1 LT Teneke Natürel Sızma Zeytinyağı</h3>
-      <p>Doğal ve katkısız</p>
-      <strong>₺400</strong><br><br>
-      <a href="https://wa.me/905074398097" target="_blank">WhatsApp’tan Sipariş</a>
-    </div>
+    <button class="slider-btn next">&#10095;</button>
+  </section>
 
-    <div class="card">
-      <img src="IMG-20260105-WA0008.jpg" alt="1 LT Şişe Natürel Sızma">
-      <h3>1 LT Şişe Natürel Sızma Zeytinyağı</h3>
-      <p>Günlük kullanım için ideal</p>
-      <strong>₺350</strong><br><br>
-      <a href="https://wa.me/905074398097" target="_blank">WhatsApp’tan Sipariş</a>
-    </div>
-
-    <div class="card">
-      <img src="IMG-20260105-WA0004.jpg" alt="5 LT İlk Hasat">
-      <h3>5 LT Teneke – Yeni Sezon İlk Hasat</h3>
-      <p>25/26 sezon, yoğun aroma</p>
-      <strong>₺1750</strong><br><br>
-      <a href="https://wa.me/905074398097" target="_blank">WhatsApp’tan Sipariş</a>
-    </div>
-
-    <div class="card">
-      <img src="IMG-20260105-WA0002.jpg" alt="5 LT Natürel Sızma">
-      <h3>5 LT Teneke Natürel Sızma Zeytinyağı</h3>
-      <p>Aile tüketimi için ideal</p>
-      <strong>₺1450</strong><br><br>
-      <a href="https://wa.me/905074398097" target="_blank">WhatsApp’tan Sipariş</a>
-    </div>
-
-  </div>
-</section>
-  <section>
-  <div class="card" style="text-align:center; background:#f1f8e9;">
-    <h3>🚚 Kargo & Ödeme Bilgisi</h3>
-    <p>
-      ✅ <strong>1000 TL ve üzeri alışverişlerde kargo BEDAVA</strong><br>
-      📦 1000 TL altı siparişlerde kargo ücreti alıcıya aittir<br><br>
-      💳 <strong>Anlaşmalı kargo ile kapıda ödeme imkanı</strong><br>
-      💬 Detaylı bilgi için WhatsApp’tan bizimle iletişime geçebilirsiniz
-    </p>
-    <a href="https://wa.me/905074398097" target="_blank">
-      WhatsApp’tan Yaz
-    </a>
-  </div>
-</section>
+  <script src="script.js"></script>
 </body>
 </html>
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-.card img {
-  width: 100% !important;
-  height: 180px !important;
-  object-fit: cover !important;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+/* SLIDER CONTAINER */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 16px 0;
+}
+
+/* SLIDER TRACK */
+.slider-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+/* SLIDE */
+.slide {
+  flex: 0 0 80%; /* Mobilde %80 */
+  scroll-snap-align: start;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
-@media (min-width: 601px) {
-  .card img {
-    height: 220px !important;
-  }
+/* SLIDER BUTTONS */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
 }
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* DESKTOP AYARI */
+@media (min-width: 768px) {
+  .slide {
+    flex: 0 0 30%; /* Desktop 3 kolon */
+  }
+}const track = document.querySelector('.slider-track');
+const prevBtn = document.querySelector('.slider-btn.prev');
+const nextBtn = document.querySelector('.slider-btn.next');
+
+const slides = track.querySelectorAll('.slide');
+let slideIndex = 0;
+
+const slideWidth = () => slides[0].offsetWidth + 16; // gap dahil
+
+// Ok butonları ile kaydırma
+prevBtn.addEventListener('click', () => {
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  track.scrollTo({ left: slideWidth() * slideIndex, behavior: 'smooth' });
+});
+
+nextBtn.addEventListener('click', () => {
+  slideIndex = (slideIndex + 1) % slides.length;
+  track.scrollTo({ left: slideWidth() * slideIndex, behavior: 'smooth' });
+});
+
+// Otomatik kayma
+let autoSlide = setInterval(() => {
+  slideIndex = (slideIndex + 1) % slides.length;
+  track.scrollTo({ left: slideWidth() * slideIndex, behavior: 'smooth' });
+}, 3000); // 3 saniyede bir kayar
+
+// Otomatik kaymayı durdurma (parmakla dokununca)
+track.addEventListener('mouseenter', () => clearInterval(autoSlide));
+track.addEventListener('mouseleave', () => {
+  autoSlide = setInterval(() => {
+    slideIndex = (slideIndex + 1) % slides.length;
+    track.scrollTo({ left: slideWidth() * slideIndex, behavior: 'smooth' });
+  }, 3000);
+});
