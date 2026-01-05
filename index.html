@@ -8,7 +8,6 @@
     * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
     body { font-family:'Arial', sans-serif; background-color:#f0fff4; color:#2e4d2e; line-height:1.4; }
 
-    /* Sabit navbar */
     header {
         position: fixed;
         top:0;
@@ -26,7 +25,6 @@
     nav a { margin-left:15px; color:#2e4d2e; text-decoration:none; font-weight:bold; transition:0.3s; font-size:0.9em; }
     nav a:hover { color:#4caf50; }
 
-    /* Hero */
     .hero {
         position:relative;
         height:85vh;
@@ -50,12 +48,10 @@
     }
     .hero-text h1 { font-size:2.2em; color:#fff; margin-bottom:6px; }
     .hero-text p { font-size:1.1em; color:#e0f2f1; }
-
     .hero-logo { position:absolute; top:12px; right:12px; height:45px; animation: fadeIn 2s ease-in-out; }
 
     @keyframes fadeIn { from {opacity:0; transform:translateY(-15px);} to {opacity:1; transform:translateY(0);} }
 
-    /* Ürünler */
     .products { padding:35px 12px; text-align:center; }
     .products h2 { font-size:1.8em; margin-bottom:20px; }
     .product-list { 
@@ -64,7 +60,6 @@
         gap:12px; 
         justify-content:center;
     }
-
     .product-item {
         background-color:#e6f4ea; 
         padding:10px; 
@@ -108,7 +103,6 @@
     footer a { color:#a5d6a7; text-decoration:none; font-weight:bold; transition:0.3s; }
     footer a:hover { color:#e0f2f1; }
 
-    /* Sabit butonlar */
     .whatsapp-fixed, .top-fixed {
         position: fixed;
         right:15px;
@@ -202,10 +196,20 @@
             </div>
         </div>
 
+        <!-- 5. Ürün -->
+        <div class="product-item">
+            <img src="IMG-20260105-WA0012.jpg" alt="Kudret Narı Yağı Zeytinyağlı">
+            <div class="product-name">Kudret Narı Yağı Zeytinyağlı</div>
+            <div class="product-desc">Zeytinyağı ile Kudret Narı meyvesiyle yapılan şifalı yağ</div>
+            <div class="product-info">
+                <span class="price">₺200</span>
+                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
+            </div>
+        </div>
+
     </div>
 </section>
 
-<!-- Sabit butonlar -->
 <a href="https://wa.me/905074398097" target="_blank" class="whatsapp-fixed">WhatsApp Sipariş</a>
 <a href="#" class="top-fixed" onclick="window.scrollTo({top:0, behavior:'smooth'});">Yukarı</a>
 
