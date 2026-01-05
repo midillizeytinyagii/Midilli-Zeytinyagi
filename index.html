@@ -6,7 +6,7 @@
 <title>Midilli Zeytinyağı</title>
 <style>
     * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
-    body { font-family:'Arial', sans-serif; background-color:#f0fff4; color:#2e4d2e; line-height:1.6; }
+    body { font-family:'Arial', sans-serif; background-color:#f0fff4; color:#2e4d2e; line-height:1.5; }
 
     /* Sabit navbar */
     header {
@@ -17,19 +17,19 @@
         display:flex; 
         align-items:center; 
         justify-content:space-between; 
-        padding:15px 30px; 
+        padding:12px 25px; 
         background-color:rgba(255,255,255,0.95); 
         box-shadow:0 3px 8px rgba(0,0,0,0.1);
         z-index:1000;
     }
-    .logo { height:50px; }
-    nav a { margin-left:20px; color:#2e4d2e; text-decoration:none; font-weight:bold; transition:0.3s; }
+    .logo { height:45px; }
+    nav a { margin-left:15px; color:#2e4d2e; text-decoration:none; font-weight:bold; transition:0.3s; }
     nav a:hover { color:#4caf50; }
 
     /* Hero */
     .hero {
         position:relative;
-        height:100vh;
+        height:90vh;
         background-image:url('IMG-20260104-WA0006.jpg');
         background-size:cover;
         background-position:center;
@@ -37,50 +37,56 @@
         align-items:center;
         justify-content:center;
         text-align:center;
-        margin-top:80px; /* navbar yüksekliği */
+        margin-top:70px; /* navbar yüksekliği */
     }
     .hero-text {
         background-color: rgba(46,77,46,0.6);
-        padding:30px 20px;
-        border-radius:15px;
+        padding:25px 15px;
+        border-radius:12px;
         animation: fadeIn 2s ease-in-out;
         text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
         position: relative;
         z-index:1;
     }
-    .hero-text h1 { font-size:3em; color:#fff; margin-bottom:10px; }
-    .hero-text p { font-size:1.5em; color:#e0f2f1; }
+    .hero-text h1 { font-size:2.5em; color:#fff; margin-bottom:8px; }
+    .hero-text p { font-size:1.2em; color:#e0f2f1; }
 
     /* Hero köşe logosu */
     .hero-logo {
         position:absolute;
-        top:20px;
-        right:20px;
-        height:60px;
+        top:15px;
+        right:15px;
+        height:50px;
         animation: fadeIn 2s ease-in-out;
     }
 
     @keyframes fadeIn { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
 
     /* Ürünler */
-    .products { padding:50px 20px; text-align:center; }
-    .products h2 { font-size:2.5em; margin-bottom:30px; }
-    .product-list { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
+    .products { padding:40px 15px; text-align:center; }
+    .products h2 { font-size:2em; margin-bottom:25px; }
+    .product-list { 
+        display:grid; 
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+        gap:15px; 
+        justify-content:center;
+    }
 
     .product-item {
         background-color:#e6f4ea; 
-        padding:15px; 
-        border-radius:15px;
+        padding:12px; 
+        border-radius:12px;
         transition: transform 0.3s, box-shadow 0.3s; 
         display:flex;
         flex-direction:column;
         align-items:center;
         text-align:center;
     }
-    .product-item:hover { transform:translateY(-5px) scale(1.05); box-shadow:0 8px 20px rgba(0,0,0,0.2); }
-    .product-item img { width:100%; border-radius:12px; margin-bottom:10px; }
+    .product-item:hover { transform:translateY(-3px) scale(1.03); box-shadow:0 6px 15px rgba(0,0,0,0.2); }
+    .product-item img { width:100%; border-radius:10px; margin-bottom:8px; }
 
-    .product-name { font-weight:bold; font-size:1.2em; margin:5px 0; }
+    .product-name { font-weight:bold; font-size:1.1em; margin:4px 0; }
+    .product-desc { font-size:0.85em; color:#2e4d2e; margin:4px 0; }
 
     /* Fiyat ve sipariş butonu */
     .product-info {
@@ -88,57 +94,59 @@
         justify-content: space-between;
         align-items:center;
         width:100%;
-        margin-top:10px;
-        gap:10px;
+        margin-top:6px;
+        gap:5px;
         flex-wrap: wrap;
     }
-    .shipping { font-weight:bold; color:#2e4d2e; }
-    .price { font-weight:bold; color:#2e4d2e; background-color:#a5d6a7; padding:5px 10px; border-radius:8px; }
+    .shipping { font-weight:bold; color:#2e4d2e; font-size:0.9em; }
+    .price { font-weight:bold; color:#2e4d2e; background-color:#a5d6a7; padding:4px 8px; border-radius:6px; font-size:0.95em; }
     .order-btn {
         background-color:#25D366;
         color:white;
-        padding:6px 12px;
-        border-radius:50px;
+        padding:5px 10px;
+        border-radius:30px;
         text-decoration:none;
         font-weight:bold;
+        font-size:0.9em;
         transition: transform 0.3s, box-shadow 0.3s;
     }
     .order-btn:hover {
         transform: translateY(-2px);
-        box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        box-shadow:0 4px 12px rgba(0,0,0,0.3);
     }
 
     /* Footer */
-    footer { background-color:#2e4d2e; color:white; text-align:center; padding:20px 0; margin-top:20px; }
-    footer img { height:30px; vertical-align:middle; margin-right:10px; }
+    footer { background-color:#2e4d2e; color:white; text-align:center; padding:15px 0; margin-top:20px; }
+    footer img { height:28px; vertical-align:middle; margin-right:8px; }
     footer a { color:#a5d6a7; text-decoration:none; font-weight:bold; transition:0.3s; }
     footer a:hover { color:#e0f2f1; }
 
     /* WhatsApp sabit buton */
     .whatsapp-fixed {
         position: fixed;
-        bottom:20px;
-        right:20px;
+        bottom:15px;
+        right:15px;
         background:#25D366;
         color:white;
-        padding:15px 20px;
+        padding:12px 18px;
         border-radius:50px;
         font-weight:bold;
         text-decoration:none;
-        box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        box-shadow:0 5px 12px rgba(0,0,0,0.3);
         transition: transform 0.3s, box-shadow 0.3s;
         z-index:1001;
+        font-size:0.95em;
     }
     .whatsapp-fixed:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
     }
 
     @media(max-width:600px){
-        .hero-text h1{ font-size:2em; }
+        .hero-text h1{ font-size:1.8em; }
         .hero-text p{ font-size:1em; }
-        header { flex-direction:column; gap:10px; padding:10px 20px; }
-        .hero-logo { height:50px; top:10px; right:10px; }
+        header { flex-direction:column; gap:8px; padding:8px 15px; }
+        .hero-logo { height:45px; top:8px; right:8px; }
         .product-info { flex-direction: column; align-items:flex-start; }
         .order-btn { width:100%; text-align:center; }
     }
@@ -146,68 +154,56 @@
 </head>
 <body>
 
-    <!-- Sabit Navbar -->
-    <header>
-        <img src="20260105_043835_0000.png" alt="Midilli Zeytinyağı Logo" class="logo">
-        <nav>
-            <a href="#urunler">Ürünler</a>
-            <a href="#iletisim">İletişim</a>
-            <a href="https://www.instagram.com/midillizeytinyagii/" target="_blank">Instagram</a>
-        </nav>
-    </header>
+<header>
+    <img src="20260105_043835_0000.png" alt="Midilli Zeytinyağı Logo" class="logo">
+    <nav>
+        <a href="#urunler">Ürünler</a>
+        <a href="#iletisim">İletişim</a>
+        <a href="https://www.instagram.com/midillizeytinyagii/" target="_blank">Instagram</a>
+    </nav>
+</header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <img src="20260105_043835_0000.png" alt="Logo" class="hero-logo">
-        <div class="hero-text">
-            <h1>Midilli Zeytinyağı</h1>
-            <p>İzmir Tire'nin bereketli topraklarından gelen doğal lezzetler</p>
-        </div>
-    </section>
+<section class="hero">
+    <img src="20260105_043835_0000.png" alt="Logo" class="hero-logo">
+    <div class="hero-text">
+        <h1>Midilli Zeytinyağı</h1>
+        <p>İzmir Tire'nin bereketli topraklarından gelen doğal lezzetler</p>
+    </div>
+</section>
 
-    <!-- Ürünler -->
-    <section class="products" id="urunler">
-        <h2>Ürünlerimiz</h2>
-        <div class="product-list">
-            <!-- 1. Ürün -->
-            <div class="product-item">
-                <img src="IMG-20260105-WA0002.jpg" alt="25/26 Yeni Sezon İLK Hasat Naturel Sızma Zeytinyağı 5 LT">
-                <div class="product-name">25/26 Yeni Sezon İLK Hasat Naturel Sızma Zeytinyağı 5 LT</div>
-                <div class="product-info">
-                    <span class="shipping">Kargo Bedava</span>
-                    <span class="price">₺1.750</span>
-                    <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-                </div>
-            </div>
-            <!-- 2. ve 3. ürünler şablon -->
-            <div class="product-item">
-                <img src="urun2.jpg" alt="Ürün 2">
-                <div class="product-name">Ürün Adı</div>
-                <div class="product-info">
-                    <span class="shipping">Kargo Bedava</span>
-                    <span class="price">₺0</span>
-                    <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-                </div>
-            </div>
-            <div class="product-item">
-                <img src="urun3.jpg" alt="Ürün 3">
-                <div class="product-name">Ürün Adı</div>
-                <div class="product-info">
-                    <span class="shipping">Kargo Bedava</span>
-                    <span class="price">₺0</span>
-                    <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-                </div>
+<section class="products" id="urunler">
+    <h2>Ürünlerimiz</h2>
+    <div class="product-list">
+        <!-- 1. Ürün -->
+        <div class="product-item">
+            <img src="IMG-20260105-WA0002.jpg" alt="25/26 Yeni Sezon İLK Hasat Naturel Sızma Zeytinyağı 5 LT">
+            <div class="product-name">25/26 Yeni Sezon İLK Hasat Naturel Sızma Zeytinyağı 5 LT</div>
+            <div class="product-info">
+                <span class="shipping">Kargo Bedava</span>
+                <span class="price">₺1.750</span>
+                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
             </div>
         </div>
-    </section>
 
-    <!-- Sabit WhatsApp butonu -->
-    <a href="https://wa.me/905074398097" target="_blank" class="whatsapp-fixed">WhatsApp Sipariş</a>
+        <!-- 2. Ürün -->
+        <div class="product-item">
+            <img src="IMG-20260105-WA0004.jpg" alt="Naturel Sızma Zeytinyağı 5 LT">
+            <div class="product-name">Naturel Sızma Zeytinyağı 5 LT</div>
+            <div class="product-desc">Tortu ve Tat Olarak Dinlenmiş. Sıcak/Soğuk. Tüm mutfağınızda kullanabilirsiniz.</div>
+            <div class="product-info">
+                <span class="shipping">Kargo Bedava</span>
+                <span class="price">₺1.450</span>
+                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer id="iletisim">
-        <img src="20260105_043835_0000.png" alt="Logo"> &copy; 2026 Midilli Zeytinyağı | <a href="https://wa.me/905074398097" target="_blank">WhatsApp</a> | <a href="https://www.instagram.com/midillizeytinyagii/" target="_blank">Instagram</a>
-    </footer>
+<a href="https://wa.me/905074398097" target="_blank" class="whatsapp-fixed">WhatsApp Sipariş</a>
+
+<footer id="iletisim">
+    <img src="20260105_043835_0000.png" alt="Logo"> &copy; 2026 Midilli Zeytinyağı | <a href="https://wa.me/905074398097" target="_blank">WhatsApp</a> | <a href="https://www.instagram.com/midillizeytinyagii/" target="_blank">Instagram</a>
+</footer>
 
 </body>
 </html>
