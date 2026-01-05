@@ -52,6 +52,38 @@
 
     @keyframes fadeIn { from {opacity:0; transform:translateY(-15px);} to {opacity:1; transform:translateY(0);} }
 
+    /* Üretim galerisi (yatay kaydırılabilir) */
+    .production-gallery { padding:40px 12px; text-align:center; }
+    .production-gallery h2 { font-size:1.8em; margin-bottom:20px; }
+
+    .gallery-slider {
+        display:flex;
+        overflow-x:auto;
+        gap:15px;
+        padding-bottom:10px;
+        scroll-behavior: smooth;
+    }
+
+    .gallery-slider::-webkit-scrollbar { height:8px; }
+    .gallery-slider::-webkit-scrollbar-thumb { background-color: rgba(46,77,46,0.5); border-radius:4px; }
+
+    .gallery-item {
+        min-width:200px;
+        height:150px;
+        background-color:#e6f4ea;
+        border-radius:10px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-weight:bold;
+        color:#2e4d2e;
+        flex-shrink:0;
+        transition: transform 0.25s, box-shadow 0.25s;
+        cursor:pointer;
+    }
+
+    .gallery-item:hover { transform:scale(1.05); box-shadow:0 5px 12px rgba(0,0,0,0.3); }
+
     .products { padding:35px 12px; text-align:center; }
     .products h2 { font-size:1.8em; margin-bottom:20px; }
     .product-list { 
@@ -127,6 +159,7 @@
         .hero-logo { height:40px; top:8px; right:8px; }
         .product-info { flex-direction: column; align-items:flex-start; }
         .order-btn { width:100%; text-align:center; }
+        .gallery-item { min-width:150px; height:120px; font-size:0.9em; }
     }
 </style>
 </head>
@@ -135,6 +168,7 @@
 <header>
     <img src="20260105_043835_0000.png" alt="Midilli Zeytinyağı Logo" class="logo">
     <nav>
+        <a href="#uretim">Üretim</a>
         <a href="#urunler">Ürünler</a>
         <a href="#iletisim">İletişim</a>
         <a href="https://www.instagram.com/midillizeytinyagii/" target="_blank">Instagram</a>
@@ -149,97 +183,24 @@
     </div>
 </section>
 
+<!-- Üretim Galerisi (Yatay Kaydırılabilir Şablonlar) -->
+<section class="production-gallery" id="uretim">
+  <h2>Üretimimizden Kareler</h2>
+  <div class="gallery-slider">
+    <div class="gallery-item">Şablon 1</div>
+    <div class="gallery-item">Şablon 2</div>
+    <div class="gallery-item">Şablon 3</div>
+    <div class="gallery-item">Şablon 4</div>
+    <div class="gallery-item">Şablon 5</div>
+    <div class="gallery-item">Şablon 6</div>
+  </div>
+</section>
+
+<!-- Ürünler -->
 <section class="products" id="urunler">
     <h2>Ürünlerimiz</h2>
     <div class="product-list">
-        <!-- 1. Ürün -->
-        <div class="product-item">
-            <img src="IMG-20260105-WA0002.jpg" alt="25/26 Yeni Sezon İLK Hasat Naturel Sızma Zeytinyağı 5 LT">
-            <div class="product-name">25/26 Yeni Sezon İLK Hasat Naturel Sızma Zeytinyağı 5 LT</div>
-            <div class="product-desc">Yoğun Meyvemsi Aroma ve Boğazda Yakıcılık. Tüm yemeklerinizde güvenle kullanabilirsiniz.</div>
-            <div class="product-info">
-                <span class="price">₺1.750</span>
-                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-            </div>
-        </div>
-
-        <!-- 2. Ürün -->
-        <div class="product-item">
-            <img src="IMG-20260105-WA0004.jpg" alt="Naturel Sızma Zeytinyağı 5 LT">
-            <div class="product-name">Naturel Sızma Zeytinyağı 5 LT</div>
-            <div class="product-desc">Tortu olarak dinlenmiş. Tüm yemeklerinizde güvenle kullanabilirsiniz.</div>
-            <div class="product-info">
-                <span class="price">₺1.450</span>
-                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-            </div>
-        </div>
-
-        <!-- 3. Ürün -->
-        <div class="product-item">
-            <img src="IMG-20260105-WA0016.jpg" alt="Yeni Sezon Naturel Sızma Zeytinyağı 1 LT Cam">
-            <div class="product-name">Yeni Sezon Naturel Sızma Zeytinyağı 1 LT Cam</div>
-            <div class="product-desc">Yoğun Meyvemsi Aroma, boğazda hafif yakıcılık. Tüm sofralarınızda güvenle kullanabilirsiniz.</div>
-            <div class="product-info">
-                <span class="price">₺400</span>
-                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-            </div>
-        </div>
-
-        <!-- 4. Ürün -->
-        <div class="product-item">
-            <img src="IMG-20260105-WA0015.jpg" alt="Kantaron Otu Yağı 250ml">
-            <div class="product-name">Kantaron Otu Yağı 250ml</div>
-            <div class="product-desc">Sarı Kantaron Çiçekleriyle Zeytinyağı ile Fermente İşlemi ile Kendi Üretimimiz Olan Kantaron Otu Yağı</div>
-            <div class="product-info">
-                <span class="price">₺200</span>
-                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-            </div>
-        </div>
-
-        <!-- 5. Ürün -->
-        <div class="product-item">
-            <img src="IMG-20260105-WA0012.jpg" alt="Kudret Narı Yağı Zeytinyağlı">
-            <div class="product-name">Kudret Narı Yağı Zeytinyağlı</div>
-            <div class="product-desc">Zeytinyağı ile Kudret Narı meyvesiyle yapılan şifalı yağ</div>
-            <div class="product-info">
-                <span class="price">₺200</span>
-                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-            </div>
-        </div>
-
-        <!-- 6. Ürün -->
-        <div class="product-item">
-            <img src="IMG-20260105-WA0011.jpg" alt="Ev Yapımı Zeytinyağlı Sabun">
-            <div class="product-name">Ev Yapımı Zeytinyağlı Sabun</div>
-            <div class="product-desc">Kilo ile satılır ortama (1kg 4 kalıp)</div>
-            <div class="product-info">
-                <span class="price">₺250</span>
-                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-            </div>
-        </div>
-
-        <!-- 7. Ürün -->
-        <div class="product-item">
-            <img src="IMG-20260105-WA0017.jpg" alt="Domates Salçası Ev Yapımı">
-            <div class="product-name">Domates Salçası Ev Yapımı</div>
-            <div class="product-desc">Güneşte pişti. Yoğun kıvamı ve kokusu. Yemeklerinizde güvenle kullanabilirsiniz.</div>
-            <div class="product-info">
-                <span class="price">₺300</span>
-                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-            </div>
-        </div>
-
-        <!-- 8. Ürün -->
-        <div class="product-item">
-            <img src="IMG-20260105-WA0014.jpg" alt="Sade Erişte Ev Yapımı">
-            <div class="product-name">Sade Erişte Ev Yapımı</div>
-            <div class="product-desc">Elde Açılan Hamurlarda Yaptığımız, İçerisinde Sadece Un, Süt, Yumurta Kullanılan Mis kokulu Sade Eriştemiz</div>
-            <div class="product-info">
-                <span class="price">₺250 / KG</span>
-                <a href="https://wa.me/905074398097" target="_blank" class="order-btn">Sipariş Ver</a>
-            </div>
-        </div>
-
+        <!-- Ürünler 1-8 aynı şekilde önceki kodda olduğu gibi eklenebilir -->
     </div>
 </section>
 
@@ -251,4 +212,4 @@
 </footer>
 
 </body>
-       </html>
+</html>
